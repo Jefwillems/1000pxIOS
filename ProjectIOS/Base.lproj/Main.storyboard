@@ -61,7 +61,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hLS-lr-ReB">
-                                <rect key="frame" x="64" y="493" width="247" height="53"/>
+                                <rect key="frame" x="64" y="550" width="247" height="53"/>
                                 <color key="backgroundColor" red="0.0" green="0.60784313729999995" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <accessibility key="accessibilityConfiguration" identifier="loginBtn"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
@@ -85,8 +85,8 @@
                             <constraint firstItem="bnw-2B-8ha" firstAttribute="top" secondItem="0Xd-ov-5Vr" secondAttribute="bottom" constant="16" id="4aB-9u-i2e"/>
                             <constraint firstItem="0Xd-ov-5Vr" firstAttribute="centerX" secondItem="CeD-Vw-aSZ" secondAttribute="centerX" id="FiK-Sf-YF0"/>
                             <constraint firstItem="bnw-2B-8ha" firstAttribute="centerY" secondItem="CeD-Vw-aSZ" secondAttribute="centerY" id="WKk-fW-NSO"/>
-                            <constraint firstItem="hLS-lr-ReB" firstAttribute="top" secondItem="bnw-2B-8ha" secondAttribute="bottom" constant="128" id="aUe-dm-fgU"/>
                             <constraint firstItem="bnw-2B-8ha" firstAttribute="centerX" secondItem="CeD-Vw-aSZ" secondAttribute="centerX" id="iz4-gl-Zhd"/>
+                            <constraint firstItem="jhH-bV-PQt" firstAttribute="bottom" secondItem="hLS-lr-ReB" secondAttribute="bottom" constant="64" id="n6g-IP-kDT"/>
                             <constraint firstItem="jhH-bV-PQt" firstAttribute="trailing" secondItem="hLS-lr-ReB" secondAttribute="trailing" constant="64" id="nke-3e-8Z7"/>
                             <constraint firstItem="jhH-bV-PQt" firstAttribute="trailing" secondItem="bnw-2B-8ha" secondAttribute="trailing" constant="64" id="oMg-w9-Hlc"/>
                             <constraint firstItem="bnw-2B-8ha" firstAttribute="leading" secondItem="jhH-bV-PQt" secondAttribute="leading" constant="64" id="sKB-WH-5fK"/>

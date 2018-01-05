@@ -12,23 +12,6 @@ class RestService {
     
     static let shared = RestService()
     
-    
-    func getFeed() {
-        Alamofire.request("https://httpbin.org/get").responseJSON { response in
-            print("Request: \(String(describing: response.request))")   // original url request
-            print("Response: \(String(describing: response.response))") // http url response
-            print("Result: \(response.result)")                         // response serialization result
-            
-            if let json = response.result.value {
-                print("JSON: \(json)") // serialized json response
-            }
-            
-            if let data = response.data, let utf8Text = String(data: data, encoding: .utf8) {
-                print("Data: \(utf8Text)") // original server data as UTF8 string
-            }
-        }
-    }
-    
     func login(username: String, password: String, completion: @escaping (_: Bool) -> Void) {
         let postUrl = "\(baseUrl)auth/login"
         let parameters: Parameters = [
@@ -74,6 +57,18 @@ class RestService {
             .validate()
             .responseJSON {
                 response in
+                if let json = response.result.value as? [String: Any] {
+                    print("json: \(json)")
+                }
+        }
+    }
+    
+    func unlike(id picture:String) {
+        let postUrl = "\(baseUrl)img/unlike/\(picture)"
+        let parameters: Parameters = [:]
+        sessionManager.request(postUrl, method: .post, parameters: parameters, encoding: JSONEncoding.default)
+            .validate()
+            .responseJSON { response in
                 if let json = response.result.value as? [String: Any] {
                     print("json: \(json)")
                 }

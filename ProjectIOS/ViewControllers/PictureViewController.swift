@@ -38,13 +38,13 @@ class PictureViewController: UIViewController {
                 picId == self.picture.id
             })!
             user.likes.remove(at: index)
+            RestService.shared.unlike(id: self.picture.id)
             self.likeBarBtnItem.tintColor = UIColor(red:0.49, green:0.65, blue:1.00, alpha:1.0)
         } else {
             user.likes.append(self.picture.id)
             RestService.shared.like(id: self.picture.id)
             self.likeBarBtnItem.tintColor = UIColor(red:1.00, green:0.18, blue:0.18, alpha:1.0)
         }
-        RestService.shared.getFeed()
     }
     private func getDataFromUrl(url: URL, completion: @escaping (Data?, URLResponse?, Error?) -> ()) {
         URLSession.shared.dataTask(with: url) {
