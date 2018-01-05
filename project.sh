@@ -4,7 +4,10 @@ if ! [ -x "$(command -v pod)" ]; then
   read -p "Do you want to install cocoapods? (y/n)" -n 1 -r
   echo
     if [[ $REPLY =~ ^[Yy]$ ]]; then
-        sudo gem install cocoapods
+	echo "installing cocoapods"
+   	sudo gem install cocoapods
+	echo ""
+	echo "Installing dependencies."
         pod install
     fi
   exit 1
