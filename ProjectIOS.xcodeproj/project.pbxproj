@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		4ACE7D8E3CF11EF1CC874641 /* Pods_ProjectIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DA3357DA2A832016BCAEE6C /* Pods_ProjectIOS.framework */; };
 		9D026FB31FFF821B00EB2465 /* AccessTokenAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D026FB21FFF821B00EB2465 /* AccessTokenAdapter.swift */; };
-		9D1ED2D51FEE816D006761C3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D1ED2D41FEE816D006761C3 /* Default-568h@2x.png */; };
 		9D1ED2DB1FEE8A5D006761C3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1ED2DA1FEE8A5D006761C3 /* LoginViewController.swift */; };
 		9D1ED2DF1FEEB45F006761C3 /* PictureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1ED2DE1FEEB45F006761C3 /* PictureCell.swift */; };
 		9D1ED2E11FEEB8FC006761C3 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1ED2E01FEEB8FC006761C3 /* FeedViewController.swift */; };
@@ -28,7 +27,6 @@
 /* Begin PBXFileReference section */
 		5481DE45057CC8D1BF180D75 /* Pods-ProjectIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectIOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProjectIOS/Pods-ProjectIOS.debug.xcconfig"; sourceTree = "<group>"; };
 		9D026FB21FFF821B00EB2465 /* AccessTokenAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessTokenAdapter.swift; sourceTree = "<group>"; };
-		9D1ED2D41FEE816D006761C3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		9D1ED2DA1FEE8A5D006761C3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9D1ED2DE1FEEB45F006761C3 /* PictureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureCell.swift; sourceTree = "<group>"; };
 		9D1ED2E01FEEB8FC006761C3 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
@@ -88,7 +86,6 @@
 		B0DD74C01F98A276000A047A = {
 			isa = PBXGroup;
 			children = (
-				9D1ED2D41FEE816D006761C3 /* Default-568h@2x.png */,
 				B0DD74CB1F98A276000A047A /* ProjectIOS */,
 				B0DD74CA1F98A276000A047A /* Products */,
 				FD3C9A1B13551C35E7B56999 /* Pods */,
@@ -221,7 +218,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0DD74D71F98A276000A047A /* LaunchScreen.storyboard in Resources */,
-				9D1ED2D51FEE816D006761C3 /* Default-568h@2x.png in Resources */,
 				B0DD74D41F98A276000A047A /* Assets.xcassets in Resources */,
 				B0DD74D21F98A276000A047A /* Main.storyboard in Resources */,
 			);
