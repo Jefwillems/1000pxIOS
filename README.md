@@ -1,6 +1,6 @@
 # 1000px IOS app
 
-## Installation
+## Installation (Mac)
 the project.sh file checks if cocoapods is installed and installs the projects dependencies.
 
     $ git clone git@github.com:Jefwillems/1000pxIOS.git
